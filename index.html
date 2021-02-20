@@ -62,6 +62,31 @@ img.zoom {
     .modal-footer{
       display:none;  
     }
+
+    .slide-in {
+      animation: slideIn 3s ease-out;
+    }
+
+    .slide-up {
+      animation: slideUp 2s ease-out;
+    }
+    /* Move it (define the animation) */
+    @keyframes slideIn {
+    0%   { 
+    transform: translateX(50%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+    }
+    @keyframes slideUp {
+    0%   { 
+    transform: translateY(50%); 		
+    }
+    100% { 
+    transform: translateY(0%); 
+    }
+    }
     </style>
 <!--
 Mini Profile Template
@@ -78,8 +103,8 @@ https://templatemo.com/tm-530-mini-profile
             <!-- Black transparent bg -->
             <div class="ml-0 mr-0 tm-bg-black-transparent text-white tm-brand-container-inner" style="margin-top: 200px;">
               <div class="tm-brand-container text-center" style="padding-left: 0px;padding-right: 0px; padding-top: 10px; padding-bottom: 10px;margin-top: 150px;">
-                <h1 class="tm-brand-name" style="font-family: 'Dancing Script', cursive;">Galih & Ratna</h1>
-                <p class="tm-brand-description mb-0">Wedding Announcement</p>
+                <h1 class="tm-brand-name slide-in" style="font-family: 'Dancing Script';">Galih & Ratna</h1>
+                <p class="tm-brand-description mb-0 slide-up">Wedding Announcement</p>
               </div>
             </div>
           </div>
@@ -129,28 +154,29 @@ https://templatemo.com/tm-530-mini-profile
             <div class="row">
               <!-- Welcome Text -->
               <!-- White transparent bg -->
-              <div class="col-md-7 tm-welcome-left-col">
-                <div class="tm-welcome-left">
+              <div class="col-md-7">
+                <div class="tm-welcome-left" style="padding-bottom: 0px;">
                   <h1 class="tm-welcome-title" style="font-family: 'Dancing Script', cursive;">Om Swastyastu</h1>
-                  <p class="pb-0">
+                  <p class="pb-0" style="font-size: 12px;">
                     Atas asung kerta wara nugraha Ida Sang Hyang Widhi Wasa, kami sampaikan kabar bahagia
   kepada Bapak/Ibu/Saudara/i tentang pernikahan kami yang akan dilaksanakan pada: </p>
-                    <pre style="font-family: 'Dancing Script', cursive;font-size: 20px;"><b>Tanggal</b>             : 14 Februari 2021</pre>
-                    <pre style="font-family: 'Dancing Script', cursive;font-size: 20px;"><b>Waktu</b>              : 09:00 WITA - Selesai </pre>
-                    <pre style="font-family: 'Dancing Script', cursive;font-size: 20px;"><b>Alamat/Lokasi</b>  : Br. Angseri, Baturiti, Tabanan, Bali</pre>
+                    <pre style="font-family: 'Dancing Script', cursive;font-size: 18px;"><b>Tanggal</b>             : 14 Februari 2021</pre>
+                    <pre style="font-family: 'Dancing Script', cursive;font-size: 18px;"><b>Waktu</b>              : 09:00 WITA - Selesai </pre>
+                    <pre style="font-family: 'Dancing Script', cursive;font-size: 18px;"><b>Alamat/Lokasi</b>  : Br. Angseri, Baturiti, Tabanan, Bali</pre>
                 </div>
               </div>
               <!-- Brown bg -->
               <div class="col-md-5">
                 <div class="tm-welcome-left">
                   <p class="mb-0">
-                    <p>Mohon maaf, dikarenakan himbauan pemerintah terkait covid-19 anda tidak bisa menghadiri pernikahan kami secara langsung. Sebagai gantinya, anda dapat mengikuti sesi acara pernikahan kami secara virtual melalui tautan Live Instagram berikut ini:</p>
+                    <p style="font-size: 12px;">Mohon maaf, dikarenakan himbauan pemerintah terkait covid-19 anda tidak bisa menghadiri pernikahan kami secara langsung. Sebagai gantinya, anda dapat mengikuti sesi acara pernikahan kami secara virtual melalui tautan Live Instagram berikut ini:</p>
                   </p>
                   <div class="text-center">
                     <a class="btn btn-danger" target="__blank" href="https://www.instagram.com/adignwn93/" style="text-decoration: none;color: white;"><i class="fa fa-instagram"></i> LIVE</a> 
                   </div>
-                  <p>Terimakasih atas pengertian Bapak/Ibu/Saudara/i dan mohon doa restu untuk ikatan cinta kami.</p>
-                  <h3 class="tm-welcome-title" style="font-family: 'Dancing Script', cursive;">Om Shanti, Shanti, Shanti Om</h3>
+                  <br>
+                  <p style="font-size: 12px;">Terimakasih atas pengertian Bapak/Ibu/Saudara/i dan mohon doa restu untuk ikatan cinta kami.</p>
+                  <h4 class="tm-welcome-title" style="font-family: 'Dancing Script', cursive;">Om Shanti, Shanti, Shanti Om</h4>
                 </div>
               </div>
             </div>
